@@ -1,0 +1,70 @@
+\documentclass[12pt,notitlepage,oneside,twocolumn,a4paper]{article}
+
+\usepackage[left=10mm,top=10mm,right=10mm,bottom=10mm]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Ubuntu}
+
+\usepackage[dvipsnames]{xcolor}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4mm}
+\pagestyle{empty}
+\frenchspacing
+
+\begin{document}
+
+    \title{Artykuł A4}
+    \author{Imię Nazwisko}
+    \maketitle
+
+    \renewcommand{\abstractname}{W skrócie}
+    \begin{abstract}
+        Dokument w formacie A4.
+    \end{abstract}
+
+    % jednowierszowy komentarz
+    \iffalse
+    jakis komentarz
+    \fi
+
+    \fbox{\parbox{7cm}{
+        \begin{itemize}
+            \setlength{\itemsep}{0pt}
+            \setlength{\parsep}{0pt}
+            \setlength{\parskip}{0pt}
+            \item {\color{black}black}
+            \item \textcolor{blue}{blue}
+            \item \textcolor{brown}{brown}
+            \item \textcolor{cyan}{cyan}
+            \item \textcolor{darkgray}{darkgray}
+            \item \textcolor{gray}{gray}
+            \item \textcolor{green}{green}
+            \item \textcolor{lightgray}{lightgray}
+            \item \fcolorbox{black}{white}{\textcolor{lime}{lime}}
+            \item \textcolor{magenta}{magenta}
+            \item \textcolor{olive}{olive}
+            \item \textcolor{orange}{orange}
+            \item \textcolor{pink}{pink}
+            \item \textcolor{purple}{purple}
+            \item \textcolor{red}{red}
+            \item \textcolor{teal}{teal}
+            \item \textcolor{violet}{violet}
+            \item \colorbox{blue}{\color{white}white}
+            \item \fcolorbox{black}{magenta}{\color{yellow}yellow}
+        \end{itemize}
+        Nazwy dvipsnames kolorów:\\
+        \textcolor{Apricot}{Apricot}
+        \textcolor{Aquamarine}{Aquamarine}
+        \textcolor{Bittersweet}{Bittersweet}
+        \textcolor{Black}{Black}
+        \ldots
+        \textcolor{Turquoise}{Turquoise}
+        \textcolor{Violet}{Violet}
+        \textellipsis
+    }}
+
+    Style:
+    \textnormal{textnormal czyli {\normalfont normalfont}}
+
+\end{document}
